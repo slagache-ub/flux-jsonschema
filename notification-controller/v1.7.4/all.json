@@ -1,0 +1,94 @@
+{
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1beta2$"
+          },
+          "kind": {
+            "const": "Alert"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/notification-controller/v1.7.4/alert_v1beta2.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1beta3$"
+          },
+          "kind": {
+            "const": "Alert"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/notification-controller/v1.7.4/alert_v1beta3.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1beta2$"
+          },
+          "kind": {
+            "const": "Provider"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/notification-controller/v1.7.4/provider_v1beta2.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1beta3$"
+          },
+          "kind": {
+            "const": "Provider"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/notification-controller/v1.7.4/provider_v1beta3.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1$"
+          },
+          "kind": {
+            "const": "Receiver"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/notification-controller/v1.7.4/receiver_v1.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1beta2$"
+          },
+          "kind": {
+            "const": "Receiver"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/notification-controller/v1.7.4/receiver_v1beta2.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v2$"
+          },
+          "kind": {
+            "const": "HelmRelease"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/helm-controller/v1.4.5/helmrelease_v2.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v2beta2$"
+          },
+          "kind": {
+            "const": "HelmRelease"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/helm-controller/v1.4.5/helmrelease_v2beta2.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1$"
+          },
+          "kind": {
+            "const": "Bucket"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/source-controller/v1.6.0/bucket_v1.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1beta1$"
+          },
+          "kind": {
+            "const": "Bucket"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/source-controller/v1.6.0/bucket_v1beta1.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1beta2$"
+          },
+          "kind": {
+            "const": "Bucket"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/source-controller/v1.6.0/bucket_v1beta2.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1$"
+          },
+          "kind": {
+            "const": "GitRepository"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/source-controller/v1.6.0/gitrepository_v1.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1beta1$"
+          },
+          "kind": {
+            "const": "GitRepository"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/source-controller/v1.6.0/gitrepository_v1beta1.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1beta2$"
+          },
+          "kind": {
+            "const": "GitRepository"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/source-controller/v1.6.0/gitrepository_v1beta2.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1$"
+          },
+          "kind": {
+            "const": "HelmChart"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/source-controller/v1.6.0/helmchart_v1.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1beta1$"
+          },
+          "kind": {
+            "const": "HelmChart"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/source-controller/v1.6.0/helmchart_v1beta1.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1beta2$"
+          },
+          "kind": {
+            "const": "HelmChart"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/source-controller/v1.6.0/helmchart_v1beta2.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1$"
+          },
+          "kind": {
+            "const": "HelmRepository"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/source-controller/v1.6.0/helmrepository_v1.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1beta1$"
+          },
+          "kind": {
+            "const": "HelmRepository"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/source-controller/v1.6.0/helmrepository_v1beta1.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1beta2$"
+          },
+          "kind": {
+            "const": "HelmRepository"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/source-controller/v1.6.0/helmrepository_v1beta2.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1$"
+          },
+          "kind": {
+            "const": "OCIRepository"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/source-controller/v1.6.0/ocirepository_v1.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1beta2$"
+          },
+          "kind": {
+            "const": "OCIRepository"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/source-controller/v1.6.0/ocirepository_v1beta2.json"
+      }
+    }
+  ]
+}

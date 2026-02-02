@@ -1,0 +1,19 @@
+{
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1beta1$"
+          },
+          "kind": {
+            "const": "ArtifactGenerator"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/source-watcher/v2.0.1/artifactgenerator_v1beta1.json"
+      }
+    }
+  ]
+}

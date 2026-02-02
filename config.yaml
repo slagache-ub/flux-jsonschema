@@ -1,0 +1,28 @@
+source-controller:
+    repo: https://github.com/fluxcd/source-controller.git
+    crds: https://github.com/fluxcd/source-controller/releases/download/{version}/source-controller.crds.yaml
+    version: '^v1\.[67]\.[0-9]\{1,2\}$'
+helm-controller:    
+    repo: https://github.com/fluxcd/helm-controller.git
+    crds: https://github.com/fluxcd/helm-controller/releases/download/{version}/helm-controller.crds.yaml
+    version: '^v1\.[34]\.[0-9]\{1,2\}$'
+image-reflector-controller:
+    repo: https://github.com/fluxcd/image-reflector-controller.git
+    crds: https://github.com/fluxcd/image-reflector-controller/releases/download/{version}/image-reflector-controller.crds.yaml
+    version: '^v1\.[0-9]\.[0-9]\{1,2\}$'
+image-automation-controller:
+    repo: https://github.com/fluxcd/image-automation-controller.git
+    crds: https://github.com/fluxcd/image-automation-controller/releases/download/{version}/image-automation-controller.crds.yaml
+    version: '^v1\.[0-9]\.[0-9]\{1,2\}$'
+notification-controller:
+    repo: https://github.com/fluxcd/notification-controller.git
+    crds: https://github.com/fluxcd/notification-controller/releases/download/{version}/notification-controller.crds.yaml
+    version: '^v1\.[67]\.[0-9]\{1,2\}$'
+source-watcher:
+    repo: https://github.com/fluxcd/source-watcher.git
+    crds: https://github.com/fluxcd/source-watcher/releases/download/{version}/source-watcher.crds.yaml
+    version: '^v2\.[0-9]\.[0-9]\{1,2\}$'
+kustomize-controller:
+    repo: https://github.com/fluxcd/kustomize-controller.git
+    crds: https://github.com/fluxcd/kustomize-controller/releases/download/{version}/kustomize-controller.crds.yaml
+    version: '^v1\.[67]\.[0-9]\{1,2\}$'

@@ -1,0 +1,34 @@
+{
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1$"
+          },
+          "kind": {
+            "const": "Kustomization"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/kustomize-controller/v1.7.1/kustomization_v1.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1beta2$"
+          },
+          "kind": {
+            "const": "Kustomization"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/kustomize-controller/v1.7.1/kustomization_v1beta2.json"
+      }
+    }
+  ]
+}

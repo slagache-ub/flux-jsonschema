@@ -1,0 +1,34 @@
+{
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1$"
+          },
+          "kind": {
+            "const": "ImageUpdateAutomation"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/image-automation-controller/v1.0.0/imageupdateautomation_v1.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1beta2$"
+          },
+          "kind": {
+            "const": "ImageUpdateAutomation"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/image-automation-controller/v1.0.0/imageupdateautomation_v1beta2.json"
+      }
+    }
+  ]
+}
