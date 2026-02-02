@@ -12,7 +12,7 @@
         }
       },
       "then": {
-        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/notification-controller/v1.6.0/alert_v1beta1.json"
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/-/raw/master/notification-controller/v1.6.0/alert_v1beta1.json"
       }
     },
     {
@@ -27,7 +27,7 @@
         }
       },
       "then": {
-        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/notification-controller/v1.6.0/alert_v1beta2.json"
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/-/raw/master/notification-controller/v1.6.0/alert_v1beta2.json"
       }
     },
     {
@@ -42,7 +42,7 @@
         }
       },
       "then": {
-        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/notification-controller/v1.6.0/alert_v1beta3.json"
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/-/raw/master/notification-controller/v1.6.0/alert_v1beta3.json"
       }
     },
     {
@@ -57,7 +57,7 @@
         }
       },
       "then": {
-        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/notification-controller/v1.6.0/provider_v1beta1.json"
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/-/raw/master/notification-controller/v1.6.0/provider_v1beta1.json"
       }
     },
     {
@@ -72,7 +72,7 @@
         }
       },
       "then": {
-        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/notification-controller/v1.6.0/provider_v1beta2.json"
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/-/raw/master/notification-controller/v1.6.0/provider_v1beta2.json"
       }
     },
     {
@@ -87,7 +87,7 @@
         }
       },
       "then": {
-        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/notification-controller/v1.6.0/provider_v1beta3.json"
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/-/raw/master/notification-controller/v1.6.0/provider_v1beta3.json"
       }
     },
     {
@@ -102,7 +102,7 @@
         }
       },
       "then": {
-        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/notification-controller/v1.6.0/receiver_v1.json"
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/-/raw/master/notification-controller/v1.6.0/receiver_v1.json"
       }
     },
     {
@@ -117,7 +117,7 @@
         }
       },
       "then": {
-        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/notification-controller/v1.6.0/receiver_v1beta1.json"
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/-/raw/master/notification-controller/v1.6.0/receiver_v1beta1.json"
       }
     },
     {
@@ -132,7 +132,7 @@
         }
       },
       "then": {
-        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/notification-controller/v1.6.0/receiver_v1beta2.json"
+        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/-/raw/master/notification-controller/v1.6.0/receiver_v1beta2.json"
       }
     }
   ]
