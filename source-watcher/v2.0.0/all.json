@@ -12,7 +12,7 @@
         }
       },
       "then": {
-        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/-/raw/master/source-watcher/v2.0.0/artifactgenerator_v1beta1.json"
+        "$ref": "./artifactgenerator_v1beta1.json"
       }
     }
   ]

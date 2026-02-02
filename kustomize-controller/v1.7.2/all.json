@@ -12,7 +12,7 @@
         }
       },
       "then": {
-        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/-/raw/master/kustomize-controller/v1.7.2/kustomization_v1.json"
+        "$ref": "./kustomization_v1.json"
       }
     },
     {
@@ -27,7 +27,7 @@
         }
       },
       "then": {
-        "$ref": "https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/-/raw/master/kustomize-controller/v1.7.2/kustomization_v1beta2.json"
+        "$ref": "./kustomization_v1beta2.json"
       }
     }
   ]
