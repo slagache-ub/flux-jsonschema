@@ -117,7 +117,7 @@ def build_conditional_json(version, kind, filename, dir=None):
             }
         },
         "then": {
-            "$ref": f"https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/-/raw/master/{dir if dir else ""}/{filename}"
+            "$ref": f"https://git-dsi.u-bordeaux.fr/app-ci/flux-jsonschema/{dir if dir else ""}/{filename}"
         }
     }
 
