@@ -1,18 +1,18 @@
 # flux-jsonschema
 
-Projet librement inspiré de [yannh/kubernetes-json-schema](https://github.com/yannh/kubernetes-json-schema)
+Project inspired by [yannh/kubernetes-json-schema](https://github.com/yannh/kubernetes-json-schema)
 
-Le but est d'obtenir des json-schemas à jour pour valider les ressources issues de CRDs flux. Ces schémas peuvent par exemple être utilisés avec l'extension [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) pour VSCode afin d'avoir directement dans l'IDE du linting, de l'autocomplétion et de la doc (cf ci-dessous).
+The goal is to provide up-to-date json-schemas in order to validate FluxCD custom resources. These schemas can be used for instance with VSCode [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) extension in order to get linting, autocompletion and documentation directly within the editor (see below).
 
-## Comment utiliser les jsonschemas
+## How to use the json schemas
 
-Le repo étant privé, à moins de pouvoir set up une méthode d'authentification avec l'outil utilisé, il faut cloner le repo localement. Pensez à adapter les exemples qui suivent avec le chemin où vous avez cloné le repo.
+Multiple tools can digest the schemas for validation within a CI pipeline, or inside an IDE for instance. Below are some examples.
 
-### Extension YAML pour VSCode
+### VSCode YAML extension
 
-L'extension [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) pour VSCode (développée par RedHat) permet de valider la syntaxe des fichiers YAML dans VSCode. Il est possible d'ajouter des schemas de validation pour des utilisations spécifiques (Kubernetes, Gitlab CICD, etc.). Chaque schema est associé à un glob pattern et s'appliquera aux fichiers concernés.
+VSCode [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) extension (developed by RedHat) enables YAML files' validation within VSCode. Users can provide schemas for specific tools (Kubernetes, Gitlab CICD, etc.). Each schema is associated with a glob pattern and will be applied to the matching files.
 
-Pour cela, il faut modifier le fichier `~/.config/Code/User/settings.json` (pour Ubuntu) et y ajouter par exemple les lignes suivantes :
+For this, the `settings.json` file needs to be edited (`~/.config/Code/User/settings.json` for Ubuntu users). Here is an example :
 
 ```json
 "yaml.schemas": {
@@ -40,12 +40,24 @@ Pour cela, il faut modifier le fichier `~/.config/Code/User/settings.json` (pour
 }
 ```
 
-Dans cet exemple, tous les fichiers YAML du repo flux2 seront validés via l'extension. Ce faisant, l'utilisateur aura accès directement dans VSCode à :
+With these lines added, every flux2 repo's YAML files will be validated. This way, the user will have access to :
 
-* Un linter : affichages de vaguelettes rouges si un élément n'est pas conforme (typo dans un champ, mauvais type pour une valeur, etc.)
-* De l'autocomplétion : en tapant les première lettres d'un nouveau champ (ou avec le raccourci `Ctrl+space`), l'utilisateur voit en un coup d'oeil quels sont les champs supportés par la CRD
-* De la documentation : en passant sa souris sur un champ, l'éditeur affiche une pop up qui décrit son utilisation
+* A linter that visually underlines mistakes (mispelled fields, incorrect value types, etc.)
+* Autocompletion : when typing a fields' first letters (or using the shortcut `Ctrl+space`), the user can see at a glance the CRD compliant fields
+* Documentation : when hovering a field, the editor shows a pop up describing it
 
-## Comment ça marche
+## How it works
 
-nightly pipeline -> #TODO
+### Config
+
+Every CRD that needs to be converted is added to the file `config.yaml`. More precisely, for each resource, the following information is given :
+
+* the CRD's repo url (needed to fetch the corresponding versions)
+* the CRD's download link
+* a regex to select specific versions
+
+### Nightly pipeline
+
+A Github Action workflow runs every night to fetch new CRDs versions. For every new version, the script `openapi2jsonschema.py` (also from [yannh/kubernetes-json-schema](https://github.com/yannh/kubernetes-json-schema)) downloads and converts the CRD to a json schema. Then the new schemas are commited to the repo.
+
+For the moment, users need to manually adjust the versions of the schemas in their tools (e.g. YAML extension) if they want the latest ones.
