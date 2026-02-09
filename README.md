@@ -16,25 +16,25 @@ Pour cela, il faut modifier le fichier `~/.config/Code/User/settings.json` (pour
 
 ```json
 "yaml.schemas": {
-    "file:///home/ubuntu/flux-jsonschema/helm-controller/v1.4.5/all.json": [
+    "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/helm-controller/v1.4.5/all.json": [
         "/home/ubuntu/flux2/**/*.yaml"
     ],
-    "file:///home/ubuntu/flux-jsonschema/image-automation-controller/v1.0.4/all.json": [
+    "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/image-automation-controller/v1.0.4/all.json": [
         "/home/ubuntu/flux2/**/*.yaml"
     ],
-    "file:///home/ubuntu/flux-jsonschema/image-reflector-controller/v1.0.4/all.json": [
+    "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/image-reflector-controller/v1.0.4/all.json": [
         "/home/ubuntu/flux2/**/*.yaml"
     ],
-    "file:///home/ubuntu/flux-jsonschema/kustomize-controller/v1.7.3/all.json": [
+    "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/kustomize-controller/v1.7.3/all.json": [
         "/home/ubuntu/flux2/**/*.yaml"
     ],
-    "file:///home/ubuntu/flux-jsonschema/notification-controller/v1.7.5/all.json": [
+    "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/notification-controller/v1.7.5/all.json": [
         "/home/ubuntu/flux2/**/*.yaml"
     ],
-    "file:///home/ubuntu/flux-jsonschema/source-controller/v1.7.4/all.json": [
+    "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/source-controller/v1.7.4/all.json": [
         "/home/ubuntu/flux2/**/*.yaml"
     ],
-    "file:///home/ubuntu/flux-jsonschema/source-watcher/v2.0.3/all.json": [
+    "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/source-watcher/v2.0.3/all.json": [
         "/home/ubuntu/flux2/**/*.yaml"
     ]
 }
