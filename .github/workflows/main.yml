@@ -1,0 +1,22 @@
+name: cron
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "00 23 * * *"
+jobs:
+  gen:
+    runs-on: ubuntu-slim
+    steps:
+    
+      - name: checkout
+        uses: actions/checkout@v6
+
+      - name: generate
+        run: ./build.sh
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Adding new schemas
+          commit_user_name: slagache-ub
+          commit_user_email: slagache@u-bordeaux.fr
+          commit_author: slagache-ub <slagache@u-bordeaux.fr>
