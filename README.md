@@ -43,7 +43,7 @@ Pour cela, il faut modifier le fichier `~/.config/Code/User/settings.json` (pour
 Dans cet exemple, tous les fichiers YAML du repo flux2 seront validés via l'extension. Ce faisant, l'utilisateur aura accès directement dans VSCode à :
 
 * Un linter : affichages de vaguelettes rouges si un élément n'est pas conforme (typo dans un champ, mauvais type pour une valeur, etc.)
-* De l'autocomplétion : en tapant les première lettres d'un nouveau champ, l'utilisateur voit en un coup d'oeil quels sont les champs supportés par la CRD
+* De l'autocomplétion : en tapant les première lettres d'un nouveau champ (ou avec le raccourci `Ctrl+space`), l'utilisateur voit en un coup d'oeil quels sont les champs supportés par la CRD
 * De la documentation : en passant sa souris sur un champ, l'éditeur affiche une pop up qui décrit son utilisation
 
 ## Comment ça marche
