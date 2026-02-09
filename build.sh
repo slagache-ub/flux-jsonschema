@@ -10,9 +10,18 @@ for RESOURCE in $RESOURCES; do
   GIT_REPO=$($CONFIGPARSERBIN get -n $RESOURCE -k repo config.yaml)
   VERSION_PATTERN=$($CONFIGPARSERBIN get -n $RESOURCE -k version config.yaml)
   VERSIONS=$(git ls-remote --refs --tags $GIT_REPO | cut -d/ -f3 | grep -e $VERSION_PATTERN)
-  for VERSION in $VERSIONS; do
-    TEMPLATE=$($CONFIGPARSERBIN get -n $RESOURCE -k crds config.yaml)
-    CRDS_URL=$(echo $TEMPLATE | sed "s/{version}/$VERSION/")
-    $OPENAPI2JSONSCHEMABIN -o $RESOURCE/$VERSION $CRDS_URL
-  done
+  if [ "$VERSIONS" == "$(cat $RESOURCE/.versions)" ]; then
+    echo "Nothing changed for $RESOURCE"
+  else
+    NEW_VERSIONS=$(cat <(echo "$VERSIONS") $RESOURCE/.versions | sort | uniq -u)
+    echo -e "new $RESOURCE :\n$NEW_VERSIONS"
+    # Generate schemas for new versions
+    for VERSION in $NEW_VERSIONS; do
+      TEMPLATE=$($CONFIGPARSERBIN get -n $RESOURCE -k crds config.yaml)
+      CRDS_URL=$(echo $TEMPLATE | sed "s/{version}/$VERSION/")
+      $OPENAPI2JSONSCHEMABIN -o $RESOURCE/$VERSION $CRDS_URL
+    done
+    # Update versions file
+    echo "$VERSIONS" > $RESOURCE/.versions
+  fi
 done
