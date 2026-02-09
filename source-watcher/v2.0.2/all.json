@@ -12,7 +12,7 @@
         }
       },
       "then": {
-        "$ref": "./artifactgenerator_v1beta1.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/source-watcher/v2.0.2/artifactgenerator_v1beta1.json"
       }
     }
   ]

@@ -12,7 +12,7 @@
         }
       },
       "then": {
-        "$ref": "./imagepolicy_v1.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/image-reflector-controller/v1.0.4/imagepolicy_v1.json"
       }
     },
     {
@@ -27,7 +27,7 @@
         }
       },
       "then": {
-        "$ref": "./imagepolicy_v1beta2.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/image-reflector-controller/v1.0.4/imagepolicy_v1beta2.json"
       }
     },
     {
@@ -42,7 +42,7 @@
         }
       },
       "then": {
-        "$ref": "./imagerepository_v1.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/image-reflector-controller/v1.0.4/imagerepository_v1.json"
       }
     },
     {
@@ -57,7 +57,7 @@
         }
       },
       "then": {
-        "$ref": "./imagerepository_v1beta2.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/image-reflector-controller/v1.0.4/imagerepository_v1beta2.json"
       }
     }
   ]

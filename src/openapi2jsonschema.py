@@ -117,7 +117,7 @@ def build_conditional_json(version, kind, filename, dir=None):
             }
         },
         "then": {
-            "$ref": f"./{filename}"
+            "$ref": f"https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/{dir if dir else ""}/{filename}"
         }
     }
 

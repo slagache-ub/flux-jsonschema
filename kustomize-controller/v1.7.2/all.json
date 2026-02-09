@@ -12,7 +12,7 @@
         }
       },
       "then": {
-        "$ref": "./kustomization_v1.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/kustomize-controller/v1.7.2/kustomization_v1.json"
       }
     },
     {
@@ -27,7 +27,7 @@
         }
       },
       "then": {
-        "$ref": "./kustomization_v1beta2.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/kustomize-controller/v1.7.2/kustomization_v1beta2.json"
       }
     }
   ]

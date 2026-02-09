@@ -12,7 +12,7 @@
         }
       },
       "then": {
-        "$ref": "./helmrelease_v2.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/helm-controller/v1.3.0/helmrelease_v2.json"
       }
     },
     {
@@ -27,7 +27,7 @@
         }
       },
       "then": {
-        "$ref": "./helmrelease_v2beta1.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/helm-controller/v1.3.0/helmrelease_v2beta1.json"
       }
     },
     {
@@ -42,7 +42,7 @@
         }
       },
       "then": {
-        "$ref": "./helmrelease_v2beta2.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/helm-controller/v1.3.0/helmrelease_v2beta2.json"
       }
     }
   ]

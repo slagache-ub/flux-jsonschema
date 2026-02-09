@@ -12,7 +12,7 @@
         }
       },
       "then": {
-        "$ref": "./bucket_v1.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/source-controller/v1.7.0/bucket_v1.json"
       }
     },
     {
@@ -27,7 +27,7 @@
         }
       },
       "then": {
-        "$ref": "./bucket_v1beta2.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/source-controller/v1.7.0/bucket_v1beta2.json"
       }
     },
     {
@@ -42,7 +42,7 @@
         }
       },
       "then": {
-        "$ref": "./externalartifact_v1.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/source-controller/v1.7.0/externalartifact_v1.json"
       }
     },
     {
@@ -57,7 +57,7 @@
         }
       },
       "then": {
-        "$ref": "./gitrepository_v1.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/source-controller/v1.7.0/gitrepository_v1.json"
       }
     },
     {
@@ -72,7 +72,7 @@
         }
       },
       "then": {
-        "$ref": "./gitrepository_v1beta2.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/source-controller/v1.7.0/gitrepository_v1beta2.json"
       }
     },
     {
@@ -87,7 +87,7 @@
         }
       },
       "then": {
-        "$ref": "./helmchart_v1.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/source-controller/v1.7.0/helmchart_v1.json"
       }
     },
     {
@@ -102,7 +102,7 @@
         }
       },
       "then": {
-        "$ref": "./helmchart_v1beta2.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/source-controller/v1.7.0/helmchart_v1beta2.json"
       }
     },
     {
@@ -117,7 +117,7 @@
         }
       },
       "then": {
-        "$ref": "./helmrepository_v1.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/source-controller/v1.7.0/helmrepository_v1.json"
       }
     },
     {
@@ -132,7 +132,7 @@
         }
       },
       "then": {
-        "$ref": "./helmrepository_v1beta2.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/source-controller/v1.7.0/helmrepository_v1beta2.json"
       }
     },
     {
@@ -147,7 +147,7 @@
         }
       },
       "then": {
-        "$ref": "./ocirepository_v1.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/source-controller/v1.7.0/ocirepository_v1.json"
       }
     },
     {
@@ -162,7 +162,7 @@
         }
       },
       "then": {
-        "$ref": "./ocirepository_v1beta2.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/source-controller/v1.7.0/ocirepository_v1beta2.json"
       }
     }
   ]

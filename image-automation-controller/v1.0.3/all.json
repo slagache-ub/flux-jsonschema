@@ -12,7 +12,7 @@
         }
       },
       "then": {
-        "$ref": "./imageupdateautomation_v1.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/image-automation-controller/v1.0.3/imageupdateautomation_v1.json"
       }
     },
     {
@@ -27,7 +27,7 @@
         }
       },
       "then": {
-        "$ref": "./imageupdateautomation_v1beta2.json"
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/image-automation-controller/v1.0.3/imageupdateautomation_v1beta2.json"
       }
     }
   ]
