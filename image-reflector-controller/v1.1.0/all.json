@@ -1,0 +1,64 @@
+{
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1$"
+          },
+          "kind": {
+            "const": "ImagePolicy"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/image-reflector-controller/v1.1.0/imagepolicy_v1.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1beta2$"
+          },
+          "kind": {
+            "const": "ImagePolicy"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/image-reflector-controller/v1.1.0/imagepolicy_v1beta2.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1$"
+          },
+          "kind": {
+            "const": "ImageRepository"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/image-reflector-controller/v1.1.0/imagerepository_v1.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1beta2$"
+          },
+          "kind": {
+            "const": "ImageRepository"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/image-reflector-controller/v1.1.0/imagerepository_v1beta2.json"
+      }
+    }
+  ]
+}
