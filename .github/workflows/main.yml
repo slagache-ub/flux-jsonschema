@@ -17,9 +17,6 @@ jobs:
           venv/bin/pip install -r requirements.txt
           ./build.sh
 
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: Adding new schemas
-          commit_user_name: slagache-ub
-          commit_user_email: slagache@u-bordeaux.fr
-          commit_author: slagache-ub <slagache@u-bordeaux.fr>
