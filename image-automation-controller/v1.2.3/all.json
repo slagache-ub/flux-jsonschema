@@ -1,0 +1,19 @@
+{
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "apiVersion": {
+            "pattern": "^.*v1$"
+          },
+          "kind": {
+            "const": "ImageUpdateAutomation"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://raw.githubusercontent.com/slagache-ub/flux-jsonschema/refs/heads/master/image-automation-controller/v1.2.3/imageupdateautomation_v1.json"
+      }
+    }
+  ]
+}
